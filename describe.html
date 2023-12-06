@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="js.css" />
+    <title>Javascript</title>
+
+    <!-- java scriptnya -->
+
+    <script LANGUAGE="JavaScript">
+    function ngecek(){
+    if(form.angka1.value == "" || form.angka2.value == ""){
+    alert("Input your number!!!"); //jika angka kosong maka pesan akan tampil
+    exit;
+    }
+    }
+
+    function tambah() {
+    ngecek(); //panggil function cek
+    a=eval(form.angka1.value); //mengisi variabel a dengan isi dari input name angka1
+    b=eval(form.angka2.value); //mengisi variabel b dengan isi dari input name angka2
+    c=a+b //menjumlahkan kedua variabel
+    form.total.value = c; //memberikan hasil penjumlahan ke input name total
+    }
+
+    function kali() {
+    ngecek();
+    a=eval(form.angka1.value);
+    b=eval(form.angka2.value);
+    c=a*b
+    form.total.value = c;
+    }
+
+    function kurang() {
+    ngecek();
+    a=eval(form.angka1.value);
+    b=eval(form.angka2.value);
+    c=a-b
+    form.total.value = c;
+    }
+
+    function bagi() {
+    ngecek();
+    a=eval(form.angka1.value);
+    b=eval(form.angka2.value);
+    c=a/b
+    form.total.value = c;
+    }
+
+    function reset() {
+    form.angka1.value="";
+    form.angka2.value="";
+    form.total.value = "";
+    }
+
+    </script>
+    <!-- /java script -->
+  </head>
+  <body>
+    <!-- form -->
+    <form name="form">
+      <h3>Simple Calculator</h3>
+
+      <label>First Number</label>
+      <input
+        type="number"
+        placeholder="Input your number"
+        name="angka1"
+        required
+      />
+
+      <label>Second Number</label>
+      <input
+        type="number"
+        name="angka2"
+        placeholder="Input your number"
+        required
+      />
+
+      <!-- event js -->
+      <div class="operators">
+        <input type="button" name="submit" onclick="tambah()" value="+" />
+        <input type="button" name="submit" onclick="kali()" value="X" />
+        <input type="button" name="submit" onclick="bagi()" value="/" />
+        <input type="button" name="submit" onclick="kurang()" value="-" />
+        <input type="button" name="submit" onclick="reset()" value="Reset" />
+      </div>
+      <!-- event js -->
+
+      <label>Results</label>
+        <input type="text" name="total"></input>
+
+      
+    </form>
+    <!-- /form -->
+  </body>
+</html>

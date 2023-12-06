@@ -1,0 +1,71 @@
+form {
+  height: 520px;
+  width: 400px;
+  background-color: #e9e2d0;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
+  margin: 100px 50px 100px 50px;
+  box-sizing: border-box;
+}
+form * {
+  color: #080710;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+form h3 {
+  font-size: 32px;
+  font-weight: 500px;
+  line-height: 40px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.07);
+  border-radius: 3px;
+  margin-top: 5px;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 300;
+}
+::placeholder {
+  color: #908b8b;
+}
+button {
+  width: 100%;
+  background-color: white;
+  color: #080710;
+  font-size: 18px;
+  font-weight: bolder;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.operators {
+  margin-top: 10px;
+  display: flex;
+}
+.operators input {
+  width: 150px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.27);
+  color: #080710;
+  text-align: center;
+  margin-right: 4px;
+}
+.operators input:hover {
+  background-color: rgba(43, 43, 43, 0.47);
+  color: white;
+}

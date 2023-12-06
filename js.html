@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/js.css" />
+    
+    <title>Javascript Project</title>
+
+    <!-- java scriptnya -->
+
+    <script LANGUAGE="JavaScript">
+    function ngecek(){
+    if(form.angka1.value == "" || form.angka2.value == ""){
+    alert("Input your number!!!"); 
+    exit;
+    }
+    }
+
+    function tambah() {
+    ngecek(); 
+    a=eval(form.angka1.value); 
+    b=eval(form.angka2.value); 
+    c=a+b 
+    form.total.value = c;
+    }
+
+    function kali() {
+    ngecek();
+    a=eval(form.angka1.value);
+    b=eval(form.angka2.value);
+    c=a*b
+    form.total.value = c;
+    }
+
+    function kurang() {
+    ngecek();
+    a=eval(form.angka1.value);
+    b=eval(form.angka2.value);
+    c=a-b
+    form.total.value = c;
+    }
+
+    function bagi() {
+    ngecek();
+    a=eval(form.angka1.value);
+    b=eval(form.angka2.value);
+    c=a/b
+    form.total.value = c;
+    }
+
+    function reset() {
+    form.angka1.value="";
+    form.angka2.value="";
+    form.total.value = "";
+    }
+
+    
+
+    setTimeout(writeText, speed)
+    }
+
+    </script>
+    <!-- /java script -->
+  </head>
+  <body>
+
+    <!--------------------- start nav bar ------------------ -->
+
+  <div class="navbar">
+    
+  <div class="dropdown">
+    <button class="dropbtn">Project ▾
+    </button>
+    <div class="dropdown-content">
+      <a href="js.html">JavaScript</a>
+      <a href="#">PHP</a>
+    </div>
+  </div>
+  <a href="index.html#4">Buku Tamu</a>
+  <a href="index.html#3">Article</a> 
+  <a href="index.html#2">Home</a>
+  <a href="index.html#1">About</a>
+  <div class="navbar-kiri"><a href="#" >Dinus Student Blog</a>
+</div>
+</div>
+
+    <!-- ------------------ end nav bar ------------------ -->
+
+    <!-- form -->
+    <div class="js">
+    <form name="form">
+      <h3>Simple Calculator</h3>
+
+      <label>First Number</label>
+      <input
+        type="number"
+        placeholder="Input your number"
+        name="angka1"
+        required
+      />
+
+      <label>Second Number</label>
+      <input
+        type="number"
+        name="angka2"
+        placeholder="Input your number"
+        required
+      />
+
+      <!-- event js -->
+      <div class="operators">
+        <input type="button" name="submit" onclick="tambah()" value="+" />
+        <input type="button" name="submit" onclick="kali()" value="X" />
+        <input type="button" name="submit" onclick="bagi()" value="/" />
+        <input type="button" name="submit" onclick="kurang()" value="-" />
+        <input type="button" name="submit" onclick="reset()" value="Reset" />
+      </div>
+      <!-- event js -->
+
+      <label>Results</label>
+        <input type="text" name="total"></input>
+    </form>
+    </div>    
+
+    <!-- /form -->
+
+    <div>
+      <h1 id="text">Starting...</h1>
+    </div>
+
+    <footer>
+      Copyright &copy; 2022 - Feby Akliji Rofiah
+    </footer>
+
+    <script>
+    const textEl = document.getElementById('text')
+    const text = 'We Love Programming!'
+    let idx = 1
+    let speed = 300
+
+    writeText()
+
+    function writeText() {
+    textEl.innerText = text.slice(0, idx)
+
+    idx++
+
+    if(idx > text.length) {
+        idx = 1
+    }
+  }
+    </script>
+  </body>
+</html>

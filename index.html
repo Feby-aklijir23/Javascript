@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/main.css" />
+    <title>CSS</title>
+  </head>
+  <body>
+    <!-- ------------------ start nav bar ------------------ -->
+
+    <div class="navbar">
+    
+  <div class="dropdown">
+    <button class="dropbtn">Project ▾
+    </button>
+    <div class="dropdown-content">
+      <a href="js.html">JavaScript</a>
+      <a href="#">PHP</a>
+    </div>
+  </div>
+  <a href="index.html#4">Buku Tamu</a>
+  <a href="index.html#3">Article</a> 
+  <a href="index.html#2">Home</a>
+  <a href="index.html#1">About</a>
+  <h1 class="navbar-kiri"> <a href="#" >Dinus Student Blog</a></h1>
+</div>
+
+    <!-- ------------------ end nav bar ------------------ -->
+
+    <!-- ------------------ start about ------------------ -->
+
+    <div class="hero" id="1">
+      <div>
+        <h1>Welcome To Student Blog</h1>
+        <p>
+          Dinus Student Blog merupakan website yang diperuntukkan untuk
+          mahasiswa di kampus Universitas Dian Nuswantoro. Setiap mahasiswa yang
+          ingin menggunakan blog mahasiswa diharuskan memiliki email @mhs.dinus
+          ac.id.
+        </p>
+      </div>
+    </div>
+
+    <!-- ------------------ end about ------------------ -->
+
+    <!-- ------------------ start profil ------------------ -->
+
+    <div class="profil" id="2">
+      <div class="bawah">
+        <div class="atas">
+          <img src="assets/foto-1.jpg" id="img-profil" />
+          <h2>Feby Akliji Rofiah</h2>
+          <br />
+          <p>Student of IT in Dian Nuswantara University.</p>
+          <br />
+          <p>
+            Interested in Web and Dekstop technologies like HTML5, CSS3,
+            JavaScript, PHP, MySQL, C++, Dart, Flutter, etc.
+          </p>
+          <br />
+          <p>Love music and respect Alec Benjamin. ;)</p>
+          <span class="left bottom">feby.akliji@23gmail.com</span>
+          <span class="right bottom">address: Malang Lawang</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------ end profil ------------------ -->
+
+    <!-- ------------------ start artikel ------------------ -->
+
+    <div id="3"></div>
+    <section class="artikel">
+      <img src="assets/group-1.jpeg" alt="" class="img-article" />
+      <div class="text-article">
+        <p>
+          &emsp;&emsp; Tahun 2021 adalah tahun dimana saya menamatkan pendidikan
+          jenjang SMA. Saya tamat dari salah satu SMA negeri di daerah
+          Kab.Pasuruan Jawa Timur. Sejak dari belajar dibangku sekolah SMA, saya
+          sudah memiliki keinginan untuk nanti nya melanjutkan pendidikan di
+          salah satu Perguruan Tinggi swasta, yang ada di Semarang, di
+          Universitas Dian Nuswantara.
+        </p>
+        <br />
+
+        <p>
+          &emsp;&emsp; Setelah melakukan segala kegiatan menyangkut persiapan
+          untuk mengikuti perkuliahan ( pembayaran uang kuliah , dsb ) saya
+          kemudian melihat kalender akademik dan bulan ke-9 adalah waktu dimana
+          kami akan memulai perkuliahan. Di hari pertama perkuliahan saya
+          berkenalan dengan banyak teman dari berbagai wilayah, dan bertemu
+          dengan para dosen yang akan mengajar dan membimbing kita selama satu
+          semester kedepan. Salah satunya adalah dosen pada mata pelajaran dasar
+          komputasi Bapak Edi Faisal S.Kom, M.Kom. Website ini pun dibuat atas
+          pemenuhan tugas mata pelajaran dasar komputasi atas bimbingan Bapak
+          Edi Faisal.
+        </p>
+      </div>
+    </section>
+
+    <table>
+      <tr class="pop-article">
+        <td class="card-article">
+          <img src="assets/subject.png" width="200px" />
+          <p>
+            <b>Best Subject</b>
+
+            <li>Matematika Diskrit</li>
+            <li>Dasar Komputasi</li>
+            <li>Pemrogaman Berbasis Web</li>
+            <li>Dasar Pemrogaman</li>
+          </p>
+        </td>
+        <td class="card-article">
+          <img src="assets/practice.png" width="200px" />
+          <p>
+            <b>Best Practice</b>
+            <li>Pemrogaman Berbasis Web</li>
+            <li>Dasar Komputasi</li>
+            <li>Dasar Pemrogaman</li>
+            <br />
+          </p>
+        </td>
+        <td class="card-article">
+          <img src="assets/programming language.png" width="200px" />
+          <p>
+            <b>Best Programming language</b>
+            <li>Javascript</li>
+            <li>Dart</li>
+            <li>C++</li>
+            <li>PHP</li>
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <!-- ------------------ end artikel ------------------ -->
+
+    <!-- ------------------ start buku tamu ------------------ -->
+    <div class="bukutamu" id="4">
+      <div class="bawah-form">
+        <div class="atas-form">
+          <form name="form">
+            <h3>Buku Tamu</h3>
+            <label
+              >Nama Lengkap
+              <input
+                type="text"
+                placeholder="Input your name"
+                name="name"
+                required
+            /></label>
+
+            <label
+              >Alamat Tinggal
+              <input
+                type="text"
+                placeholder="Input your address"
+                name="address"
+                id="address"
+                required
+            /></label>
+
+            <label
+              >Email
+              <input
+                type="email"
+                placeholder="xxxxxxxxxx@gmail.com"
+                name="email"
+                id="email"
+                required
+            /></label>
+
+            <label
+              >Aktif pada media sosial
+              <div class="chekbox">
+                <label class="container-ms"
+                  >Facebook
+                  <input type="checkbox" name="fb" id="fb" value="fb" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container-ms"
+                  >Twitter
+                  <input type="checkbox" name="tw" id="tw" value="tw" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container-ms"
+                  >Instagram
+                  <input type="checkbox" name="ig" id="ig" value="ig" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container-ms"
+                  >Path
+                  <input type="checkbox" name="pt" id="pt" value="pt" />
+                  <span class="checkmark"></span>
+                </label></div
+            ></label>
+
+            <label>Mengetahui web ini dari</label>
+            <select name="option" id="option" class="form-control">
+              <option value="Pilih" disabled>-Pilih-</option>
+              <option value="udinus">Web Udinus</option>
+              <option value="teman">Teman/Kerabat</option>
+              <option value="internet">Browsing Internet</option>
+            </select>
+
+            <label
+              >Pesan
+              <textarea
+                type="text"
+                placeholder="Send Me Message"
+                name="message"
+                id="message"
+                required
+                class="pesan"
+              ></textarea>
+            </label>
+            <div class="button">
+              <button type="submit" name="kirim" id="kirim">Submit</button>
+              <button type="reset" name="reset" id="reset">Reset</button>
+            </div>
+          </form>
+        </div>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.226032535767!2d110.40701211477327!3d-6.982631694955702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b4ec52229d7%3A0xc791d6abc9236c7!2sUniversitas%20Dian%20Nuswantoro!5e0!3m2!1sid!2sid!4v1671434441256!5m2!1sid!2sid"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- ------------------ end buku tamu ------------------ -->
+
+    <!-- Footer -->
+    <footer>
+      Copyright &copy; 2022 - Feby Akliji Rofiah
+    </footer>
+  </body>
+</html>
